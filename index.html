@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phantasy Star Online Wii U Setup Guide</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #0066cc;
+    }
+    code {
+      background-color: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌀 How to Play <em>Phantasy Star Online</em> on Wii U with Nintendont (SCHTHACK + BBA Support)</h1>
+  <p>This guide walks you through everything you need to:</p>
+  <ul>
+    <li>Get PSO (Episode I & II) running on a Wii U using Nintendont</li>
+    <li>Connect online to the SCHTHACK server</li>
+    <li>Set up a proper GameCube forwarder channel</li>
+    <li>Ensure broadband adapter and memory card emulation work smoothly</li>
+  </ul>
+
+  <div class="section">
+    <h2>✅ Prerequisites</h2>
+    <ul>
+      <li>A <strong>modded Wii U</strong> (with Tiramisu or Aroma)</li>
+      <li><strong>WUP Installer GX2</strong> installed on your Wii U</li>
+      <li>An <strong>SD card</strong> (preferably 32GB or less, FAT32)</li>
+      <li>A GameCube-compatible controller</li>
+      <li>Access to the <strong>PSO ISO</strong> (Phantasy Star Online Episode I & II)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎮 1. Get the PSO ISO</h2>
+    <ul>
+      <li>Obtain a clean, properly dumped ISO of <em>Phantasy Star Online Episode I & II</em>.</li>
+      <li>Verify the ISO using GameCube ISO Tool or Redump.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🔧 2. Patch the ISO</h2>
+    <ul>
+      <li>Apply the <strong>item loss prevention fix</strong></li>
+      <li>Include any <strong>quest/server patches</strong> recommended by SCHTHACK</li>
+      <li>Use tools like <strong>PSO Patcher</strong>. Tutorial: <a href="https://youtu.be/mxBKLNnb3-c" target="_blank">Kayak’s guide</a></li>
+    </ul>
+    <p><strong>💡 Tip:</strong> Keep patches minimal to reduce instability.</p>
+  </div>
+
+  <div class="section">
+    <h2>🧰 3. Download TeconMoon’s WiiVC Injector</h2>
+    <p><strong>DO NOT</strong> use UWUVCI. It’s unstable and buggy. Use <a href="https://gbatemp.net/threads/gc-wii-u-virtual-console-inject-guide.486781/" target="_blank">TeconMoon's WiiVC Injector</a> instead.</p>
+  </div>
+
+  <div class="section">
+    <h2>📁 4. Prepare the Game for Injection</h2>
+    <ol>
+      <li>Launch TeconMoon’s WiiVC Injector.</li>
+      <li>Load your patched PSO ISO.</li>
+      <li>Rename the game title (no symbols like <code>&</code>). Use <code>Phantasy Star Online</code>.</li>
+      <li>(Optional) Select a custom <code>forwarder.dol</code>, rename to <code>boot.dol</code>, and place in <code>SD:/apps/Nintendont/</code></li>
+      <li>Click <strong>Create Nintendont Config</strong> and enable:
+        <ul>
+          <li>Broadband Adapter</li>
+          <li>Memory Card Emulation</li>
+          <li>Optional: Progressive Scan, Widescreen</li>
+        </ul>
+      </li>
+      <li>Double-check all fields and tabs.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>📦 5. Build & Export the WUP</h2>
+    <p>Click <strong>Build</strong> to generate your WUP folder with installable files.</p>
+  </div>
+
+  <div class="section">
+    <h2>📂 6. Transfer to SD Card</h2>
+    <p>Copy the folder to your SD card under <code>SD:/install/</code>. Folder example: <code>SD:/install/Phantasy Star Online [ID]/...</code></p>
+  </div>
+
+  <div class="section">
+    <h2>🧱 7. Install with WUP Installer GX2</h2>
+    <ol>
+      <li>Launch WUP Installer GX2 on your Wii U.</li>
+      <li>Select your PSO title and click <strong>Install</strong>.</li>
+      <li>Choose NAND or USB for installation.</li>
+    </ol>
+    <p>🚀 PSO will now appear on your Wii U home menu!</p>
+  </div>
+
+  <div class="section">
+    <h2>🧪 8. Launching the Game</h2>
+    <ul>
+      <li>Open the new PSO channel (boots into Nintendont)</li>
+      <li>Enable Broadband Adapter and Memory Card Emulation</li>
+      <li>Optional: Enable Progressive Scan, Widescreen</li>
+      <li>Press <strong>A</strong> to start the game</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🌐 9. Connect to SCHTHACK Server</h2>
+    <ul>
+      <li>Configure your network in-game</li>
+      <li>Use DNS settings from <a href="https://www.schtserv.com/" target="_blank">schtserv.com</a></li>
+      <li>Create or log in to your SCHTHACK account</li>
+    </ul>
+    <p>🎉 You're online on your Wii U playing PSO!</p>
+  </div>
+
+  <div class="section">
+    <h2>⚠️ Tips & Notes</h2>
+    <ul>
+      <li>Never reset while saving to avoid corruption</li>
+      <li>BBA emulation only works on Wii/Wii U (not Dolphin)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🧼 Final Advice</h2>
+    <ul>
+      <li>Avoid UWUVCI for GameCube injects</li>
+      <li>Backup your progress and memory card files</li>
+      <li>If online play fails, recheck patches and network setup</li>
+    </ul>
+    <p><em>Welcome back to Ragol, Hunter.</em> 🔫✨</p>
+  </div>
+</body>
+</html>
